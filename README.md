@@ -1,3 +1,3 @@
 # craydltabsbuilder
-Craydl Tabs Buidlers verseions
-View here: https://htmlpreview.github.io/?https://github.com/cs-limpes/craydltabsbuilder/blob/main/index.html
+Craydl Tabs Interior Designers verseions
+View here: https://htmlpreview.github.io/?https://github.com/cs-limpes/craydltabsdesign/blob/main/index.html
