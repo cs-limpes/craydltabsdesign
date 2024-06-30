@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=quicksand:400,600,700");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #fff;
+  background: #323436;
+}
+
+h1 {
+  padding: 50px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+main {
+  display: flex;
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background: #4A4646;
+}
+
+.tab-container {
+  display: flex;
+  width: 50%;
+  flex-grow: 1;
+}
+
+.tab-labels {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 50%;
+  margin-left: 20px;
+}
+
+#tabImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tab {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #5B5757;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: block;
+  padding: 15px;
+  font-weight: 600;
+  color: #bbb;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label:hover {
+  color: #888;
+}
+
+label[for='tab1']:before { content: '\f1cb'; }
+label[for='tab2']:before { content: '\f19c'; }
+
+
+
+section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+input:checked + label {
+  color: #DED767;
+  border: 1px solid #5B5757;
+  border-left: 2px solid #DED767;
+}
+
+input:checked + label section {
+  max-height: 500px; /* Adjust this value based on your content */
+  color: #FFF;
+  padding: 10px 0;
+}
+
+ul {
+  list-style:disc;
+  list-style-position: inside;
+
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .tab-container {
+    width: 300px;
+  }
+}
+
